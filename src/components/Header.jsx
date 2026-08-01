@@ -11,14 +11,14 @@ export default function Header() {
         Café Minty
       </Link>
       <nav className={styles.nav}>
+        <Link to="/#about" className={styles.navLink}>
+          About
+        </Link>
         <Link to="/recipes" className={onRecipes ? styles.navActive : styles.navLink}>
           Recipes
         </Link>
         <Link to="/#order" className={styles.navLink}>
           Order
-        </Link>
-        <Link to="/#about" className={styles.navLink}>
-          About
         </Link>
       </nav>
     </header>
