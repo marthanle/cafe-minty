@@ -54,6 +54,8 @@
 @media (max-width: 560px) {
   .mascot {
     width: 92px;
+    right: -12px;
+    bottom: -10px;
   }
 }
 

@@ -33,12 +33,15 @@ export default function Home() {
       </section>
 
       <section id="about" className={styles.about}>
-        <CoverImage
-          src={storyImg}
-          alt="The home kitchen and pop-up setup behind Café Minty"
-          radius={8}
-          className={styles.aboutImage}
-        />
+        <div className={styles.aboutImageWrap}>
+          <CoverImage
+            src={storyImg}
+            alt="The home kitchen and pop-up setup behind Café Minty"
+            radius={8}
+            className={styles.aboutImage}
+          />
+          <MascotWave />
+        </div>
         <div>
           <div className={styles.eyebrow}>Our story</div>
           <h2 className={styles.aboutTitle}>Every recipe starts on our own counter before it ever reaches yours.</h2>
@@ -47,7 +50,6 @@ export default function Home() {
             the best ones into local pop-ups you can actually walk up to.
           </p>
         </div>
-        <MascotWave className={styles.aboutMascot} />
       </section>
 
       <section className={styles.statsSection}>
