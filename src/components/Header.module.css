@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 56px;
+  border-bottom: 0.5px solid var(--color-border);
+  background: var(--color-sage-tint);
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  color: var(--color-text);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.navLink {
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
+.navActive {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .header {
+    padding: 20px 24px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+}

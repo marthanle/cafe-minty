@@ -1,0 +1,46 @@
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 56px 32px 100px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 24px;
+}
+
+.pills {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  font-family: var(--font-sans);
+}
+
+.pill {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

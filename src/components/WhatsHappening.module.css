@@ -1,0 +1,165 @@
+.empty {
+  background: var(--color-rose-tint);
+  border: 0.5px solid var(--color-border);
+  border-radius: 8px;
+  padding: 56px 40px;
+  text-align: center;
+}
+
+.emptyHeadline {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.emptyBody {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card,
+.popupCard {
+  flex: 1;
+  min-width: 340px;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.card {
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-border);
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.dotOpen,
+.dotClosed {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotOpen {
+  background: var(--color-dot-open);
+}
+
+.dotClosed {
+  background: var(--color-dot-closed);
+}
+
+.cardTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cardLine {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-muted);
+  margin-bottom: 6px;
+}
+
+.cardLineTight {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.urgency {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-urgency);
+  margin-bottom: 20px;
+}
+
+.solidButton {
+  display: inline-block;
+  background: var(--color-text);
+  color: var(--color-cream-text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.outlineButton {
+  display: inline-block;
+  background: transparent;
+  border: 0.5px solid var(--color-border);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.outlineRoseButton {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--color-rose-border);
+  color: var(--color-rose-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popupCard {
+  background: var(--color-text);
+  color: var(--color-cream-text);
+}
+
+.popupLabel {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #c9c4b4;
+  margin-bottom: 16px;
+}
+
+.popupTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popupLine {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: #c9c4b4;
+  margin-bottom: 20px;
+}
+
+.popupButton {
+  display: inline-block;
+  background: transparent;
+  border: 0.5px solid var(--color-muted);
+  color: var(--color-cream-text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+}
