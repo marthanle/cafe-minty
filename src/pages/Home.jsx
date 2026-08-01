@@ -4,6 +4,7 @@ import RecipeCard from '../components/RecipeCard';
 import WhatsHappening from '../components/WhatsHappening';
 import { RECIPES_BY_ID, FEATURED_IDS } from '../data/recipes';
 import storyImg from '../assets/images/story.jpg';
+import heroPatternImg from '../assets/images/hero-pattern.webp';
 import styles from './Home.module.css';
 
 const featured = FEATURED_IDS.map((id) => RECIPES_BY_ID[id]);
@@ -11,20 +12,22 @@ const featured = FEATURED_IDS.map((id) => RECIPES_BY_ID[id]);
 export default function Home() {
   return (
     <div>
-      <section className={styles.hero}>
-        <div className={styles.eyebrow}>Home café &amp; bakery</div>
-        <h1 className={styles.heroTitle}>A little something, made for sharing.</h1>
-        <p className={styles.heroBody}>
-          I've always loved hosting. Café Minty is the matcha, coffee, and little desserts I make for whoever's
-          around. Recipes to make at home, and pop-ups to show up for.
-        </p>
-        <div className={styles.heroActions}>
-          <Link to="/recipes" className={styles.primaryButton}>
-            Explore recipes
-          </Link>
-          <Link to="/#order" className={styles.secondaryButton}>
-            See what's happening
-          </Link>
+      <section className={styles.hero} style={{ '--hero-pattern': `url(${heroPatternImg})` }}>
+        <div className={styles.heroContent}>
+          <div className={styles.eyebrow}>Home café &amp; bakery</div>
+          <h1 className={styles.heroTitle}>A little something, made for sharing.</h1>
+          <p className={styles.heroBody}>
+            I've always loved hosting. Café Minty is the matcha, coffee, and little desserts I make for whoever's
+            around. Recipes to make at home, and pop-ups to show up for.
+          </p>
+          <div className={styles.heroActions}>
+            <Link to="/recipes" className={styles.primaryButton}>
+              Explore recipes
+            </Link>
+            <Link to="/#order" className={styles.secondaryButton}>
+              See what's happening
+            </Link>
+          </div>
         </div>
       </section>
 
