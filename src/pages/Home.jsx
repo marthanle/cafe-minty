@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import CoverImage from '../components/CoverImage';
 import RecipeCard from '../components/RecipeCard';
 import WhatsHappening from '../components/WhatsHappening';
+import MascotWave from '../components/MascotWave';
 import { RECIPES_BY_ID, FEATURED_IDS } from '../data/recipes';
 import storyImg from '../assets/images/story.jpg';
 import heroPatternImg from '../assets/images/hero-pattern.webp';
@@ -32,12 +33,15 @@ export default function Home() {
       </section>
 
       <section id="about" className={styles.about}>
-        <CoverImage
-          src={storyImg}
-          alt="The home kitchen and pop-up setup behind Café Minty"
-          radius={8}
-          className={styles.aboutImage}
-        />
+        <div className={styles.aboutImageWrap}>
+          <CoverImage
+            src={storyImg}
+            alt="The home kitchen and pop-up setup behind Café Minty"
+            radius={8}
+            className={styles.aboutImage}
+          />
+          <MascotWave />
+        </div>
         <div>
           <div className={styles.eyebrow}>Our story</div>
           <h2 className={styles.aboutTitle}>Every recipe starts on our own counter before it ever reaches yours.</h2>

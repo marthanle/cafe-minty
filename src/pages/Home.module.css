@@ -75,6 +75,10 @@
   padding: 80px 32px;
 }
 
+.aboutImageWrap {
+  position: relative;
+}
+
 .aboutImage {
   width: 100%;
   height: 452px;
