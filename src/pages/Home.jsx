@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       <section id="order" className={styles.order}>
-        <h2 className={styles.sectionTitle}>What's happening</h2>
+        <h2 className={`${styles.sectionTitle} ${styles.orderTitle}`}>What's happening</h2>
         <WhatsHappening />
       </section>
     </div>

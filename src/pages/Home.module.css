@@ -196,6 +196,10 @@
   padding: 80px 32px 100px;
 }
 
+.orderTitle {
+  margin-bottom: 36px;
+}
+
 @media (max-width: 860px) {
   .about {
     grid-template-columns: 1fr;
