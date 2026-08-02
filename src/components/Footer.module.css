@@ -1,5 +1,6 @@
 .footer {
   border-top: 0.5px solid var(--color-border);
+  background: var(--color-sage-tint);
   padding: 40px 56px;
   display: flex;
   align-items: center;
